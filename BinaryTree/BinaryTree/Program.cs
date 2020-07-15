@@ -37,6 +37,10 @@ namespace BinaryTree
                 }
             }
         }
+        public void Print()
+        {
+           
+        }
     }
     class Program
     {
@@ -50,4 +54,5 @@ namespace BinaryTree
             }
         }
     }
+
 }
