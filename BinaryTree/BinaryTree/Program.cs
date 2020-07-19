@@ -2,7 +2,7 @@
 
 namespace BinaryTree
 {
-    class Tree 
+    class Tree   
     {
         public Tree(int value)
         {
