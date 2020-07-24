@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Dynamic;
+using System.Runtime.CompilerServices;
 
 namespace BinaryTree
 {
@@ -38,6 +39,24 @@ namespace BinaryTree
                 }
             }
         }
+        public int GetMin()
+        {
+            var result = this;
+            while(result.Left != null)
+            {
+                result = result.Left;
+            }
+            return result.Value;
+        }
+        public int GetMax()
+        {
+            var result = this;
+            while(result.Right != null)
+            {
+                result = result.Right;
+            }
+            return result.Value;
+        }
         public void Print()
         {
            
@@ -53,6 +72,8 @@ namespace BinaryTree
             {
                 tree.Add(arr[i]);
             }
+            Console.WriteLine(tree.GetMin());
+            Console.WriteLine(tree.GetMax());
         }
     }
 
